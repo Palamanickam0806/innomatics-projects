@@ -1,0 +1,96 @@
+.item1{
+     grid-area: header;
+background: rgb(178, 214, 255);}
+
+.item2{ 
+    grid-area: feature; 
+background: rgb(245, 207, 142);
+padding: 30px;}
+
+.item3{ 
+    grid-area: feature1;
+background: rgb(200, 198, 250);
+padding: 30px; }
+
+.item4{ 
+    grid-area: feature2; 
+background: rgb(240, 154, 157);
+padding: 30px;}
+
+.item5{ 
+    grid-area: signup; 
+background: rgb(214, 233, 254);
+padding: 5px;
+}
+
+.item6{ 
+    grid-area: conten;
+background: rgb(234, 237, 240); }
+
+.grid-container{
+    display: grid;
+    grid-template: 
+    'header header header'
+    'feature feature1 feature2'
+    'signup signup signup'
+    'conten conten conten';
+    height: 500px;
+}
+
+.grid-container > div{
+    text-align: center;
+    font-size: 30px;
+}
+
+/* tablet */
+@media  screen and (max-width: 768px ){
+    .grid-container{
+        display: grid;
+        grid-template: 
+        'header header'
+        'conten conten'
+        'signup feature'
+        'feature2 feature1';
+        height: 500px;
+    }
+}
+
+
+/* phone */
+@media  screen and (max-width: 420px){
+    .grid-container{
+        display: grid;
+        grid-template: 
+        'header'
+        'conten'
+        'signup'
+        'feature'
+        'feature2'
+        'feature1'
+        ;
+        height: 400px;
+    }
+    .grid-container > div{
+        text-align: center;
+        font-size: 15px;
+    }
+    .item1{
+        padding: 10px;
+    }
+    .item2{
+        padding: 10px;
+    }
+    .item3{
+        padding: 10px;
+    }
+    .item4{
+        padding: 10px;
+    }
+    .item5{
+        padding: 10px;
+    }
+    .item6{
+        padding: 50px;
+    }
+}
+
