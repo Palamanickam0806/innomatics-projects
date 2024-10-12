@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Web Page</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <h1>Run a Test</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Content</a></li>
+                    <li><a href="#">Settings</a></li>
+                    <li><a href="#">Optimize</a></li>
+                    <li><a href="#">Publishing Options</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Section -->
+    <main>
+        <div class="sidebar">
+            <h2>Edit Page</h2>
+            <div class="tab">
+                <button class="tablinks">Add</button>
+                <button class="tablinks">Content</button>
+                <button class="tablinks">Design</button>
+            </div>
+            <input type="text" placeholder="    Search modules" class="search">
+
+
+            <div class="thememod">
+                <button class="accordion">Theme modules</button>
+                <div class="panel">
+                    <section class="grid-container">
+                        <div class="grid-item">
+                            <i class="fas fa-laptop"></i>
+                            Blog post
+                        </div>
+                        <div class="grid-item">
+                            <i class="fas fa-mobile-alt"></i>
+                            Button
+                        </div>
+                        <div class="grid-item">
+                            <i class="fas fa-cogs"></i>
+                            icon
+                        </div>
+                        <div class="grid-item">
+                            <i class="fas fa-cloud"></i>
+                            profile
+                        </div>
+                        <div class="grid-item">
+                            <i class="fas fa-camera"></i>
+                            Social follow
+                        </div>
+                        <div class="grid-item">
+                            <i class="fas fa-code"></i>
+                            Testimonal slide
+                        </div>
+                    </section>
+                </div>
+
+
+
+            </div>
+
+            <div class="commod">
+
+
+                <button class="accordion">Common modules</button>
+                <div class="panel">
+                    <section class="grid-container">
+                        <div class="grid-item">
+                            <i class="fas fa-laptop"></i>
+                            Rich text
+                        </div>
+                        <div class="grid-item">
+                            <i class="fas fa-mobile-alt"></i>
+                            Image
+                        </div>
+                        <div class="grid-item">
+                            <i class="fas fa-cogs"></i>
+                            Header
+                        </div>
+                        <div class="grid-item">
+                            <i class="fas fa-cloud"></i>
+                            call to action
+                        </div>
+                        <div class="grid-item">
+                            <i class="fas fa-camera"></i>
+                            form
+                        </div>
+                        <div class="grid-item">
+                            <i class="fas fa-code"></i>
+                            gallery
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="sec">
+        <h2>5 Ways to Build a <br>Website on the Cheap</h2>
+        <div class="container main-container">
+            <!-- Left Content -->
+            
+            <div class="content-section">
+                
+                <h3>What's Inside?</h3>
+                <p>Get secure web hosting, a custom domain and a full business solution tailored to your needs. So
+                    whether you’re selling online, starting a blog, building a community or anything else—your site will
+                    do more than just look good, it will be the core of your business.A website builder
+                    engineered for growth Faster loading Wix is designed for performance so your site loads faster.
+                    Built with SEO in mind Get the SEO capabilities you need to optimize your site for search
+                    visibility.
+                    <br>
+                    Enterprise-grade security We keep your site and visitors’ data protected, 24/7 Resilient
+                    infrastructure
+                    Multi-cloud hosting ensures 99.9% uptime, even during traffic spikes.Accessible for everyone
+                    Make your own website inclusive with built-in accessibility tools.</p>
+                    <br>
+                    <br>
+                <ul>
+                    <li>Far far away, behind the word mountains, from the countries Vokalia.</li>
+                    <li>Far far away, behind the word mountains, from the countries Vokalia.</li>
+                    <li>Far far away, behind the word mountains, from the countries Vokalia.</li>
+                </ul>
+            </div>
+
+            <!-- Right Sidebar Form -->
+            <div class="form-section">
+                <h3>Send me the eBook!</h3>
+                <form>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="fname" required>
+
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lname" required>
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message"></textarea>
+
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container footer-container">
+            <p>© 2024 Run a Test. All rights reserved.</p>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345093937!2d144.9556518158443!3d-37.81732737975139!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d43fbf9f44d%3A0x5045675218ce7e33!2sMelbourne%20VIC%2C%20Australia!5e0!3m2!1sen!2sin!4v1614846433242!5m2!1sen!2sin"
+                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </footer>
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }
+    </script>
+
+</body>
+
+</html>
